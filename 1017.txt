@@ -1,0 +1,22 @@
+using System; 
+using System.Globalization;
+
+class URI {
+
+    static void Main(string[] args) { 
+
+        int horasViagem, velMedia, distancia;
+double gastoGas;
+
+horasViagem = int.Parse(Console.ReadLine());
+velMedia = int.Parse(Console.ReadLine());
+
+distancia = horasViagem * velMedia;
+
+gastoGas = distancia / 12.0;
+
+Console.WriteLine(gastoGas.ToString("F3", CultureInfo.InvariantCulture));
+
+    }
+
+}
